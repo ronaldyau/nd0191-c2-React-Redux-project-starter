@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`api _saveQuestion should return error when incorrect arguments are received 1`] = `"Please provide optionOneText, optionTwoText, and author"`;
+
+exports[`api _saveQuestion should return the saved question and all expected fields are populated 1`] = `
+{
+  "author": "Some Person",
+  "id": Any<String>,
+  "optionOne": {
+    "text": "Option A",
+    "votes": [],
+  },
+  "optionTwo": {
+    "text": "Option B",
+    "votes": [],
+  },
+  "timestamp": Any<Number>,
+}
+`;
+
+exports[`api _saveQuestionAnswer should return an error if incorrect arguments are received 1`] = `"Please provide authedUser, qid, and answer"`;
